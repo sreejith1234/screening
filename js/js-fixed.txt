@@ -1,0 +1,47 @@
+<li class="nav-item">
+    <a class="search-toggle iq-waves-effect language-title ng-binding">
+       <i class="fa fa-language"></i> English
+    </a>
+    <div class="iq-sub-dropdown lang-selected-dropdown">
+       <!-- ngRepeat: lang in localeHandler.languages --><div class="iq-sub-card language-title ng-binding ng-scope lang-active" ng-repeat="lang in localeHandler.languages" ng-class="{'lang-active':lang.code === localeHandler.activeLanguage.code}" ng-click="localeHandler.changeLocaleEvent(lang)">
+          English 
+          <!-- ngIf: lang.code === localeHandler.activeLanguage.code --><span class="lang-selected ng-scope" ng-if="lang.code === localeHandler.activeLanguage.code"><i class="fa fa-check" aria-hidden="true"></i></span><!-- end ngIf: lang.code === localeHandler.activeLanguage.code -->
+       </div><!-- end ngRepeat: lang in localeHandler.languages --><div class="iq-sub-card language-title ng-binding ng-scope" ng-repeat="lang in localeHandler.languages" ng-class="{'lang-active':lang.code === localeHandler.activeLanguage.code}" ng-click="localeHandler.changeLocaleEvent(lang)">
+          Māori 
+          <!-- ngIf: lang.code === localeHandler.activeLanguage.code -->
+       </div><!-- end ngRepeat: lang in localeHandler.languages -->
+    </div>
+ </li>
+
+
+<li class="nav-item">
+    <a class="search-toggle iq-waves-effect language-title ng-binding">
+        <i class="fa fa-language"></i> English <i class="fa fa-angle-down"></i>
+    </a>
+    <div class="iq-sub-dropdown lang-selected-dropdown">
+        <div class="iq-sub-card language-title">English
+            <span class="lang-selected">
+                <i class="fa fa-check" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div class="iq-sub-card language-title">Māori</div>
+    </div>
+</li>
+
+
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <script src="js/select2.min.js"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/smooth-scrollbar.js"></script>
+      <script src="js/core.js"></script>
+      <script src="js/animated.js"></script>
+      <script src="js/sidebar.js"></script>
+      <script src="js/custom.js"></script>

@@ -1,0 +1,1074 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title></title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Typography CSS -->
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- <link rel="stylesheet" href="https://communitystage.datavaultforhealth.com/css/container/style.css?v=00018"> -->
+      <link rel="stylesheet" href="css/custom.css">
+      <!-- <link rel="stylesheet" href="https://communitystage.datavaultforhealth.com/css/container/custom.css?v=00018"> -->
+      <link rel="stylesheet" href="https://communitystage.datavaultforhealth.com/css/container/screening.css">
+
+      <!-- Responsive CSS -->
+      <link rel="stylesheet" href="css/responsive.css">
+      
+   </head>
+   <body class="sidebar-main-menu">
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Wrapper Start -->
+      <div class="wrapper">
+
+         <!-- Sidebar  -->
+         <div class="iq-sidebar">
+            <div class="iq-sidebar-logo d-flex justify-content-between">
+               <a href="dashboard.html">
+               <img src="images/logo.png" class="img-fluid" alt="">
+               <span></span>
+               </a>
+               <div class="iq-menu-bt-sidebar">
+                  <div class="iq-menu-bt align-self-center">
+                     <div class="wrapper-menu">
+                        <div class="main-circle"><i class="fa fa-ellipsis-h ft-12"></i></div>
+                        <div class="hover-circle"><i class="fa fa-ellipsis-v ft-12"></i></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="sidebar-scrollbar">
+               <nav class="iq-sidebar-menu">
+                  <ul id="iq-sidebar-toggle" class="iq-menu">
+                     <li class="iq-menu-title"><i class="fa fa-minus ft-12"></i><span>Menu</span></li>
+                     <li class="active">
+                        <a href="index.html" class="iq-waves-effect"><i class="ft-12 fa fa-tachometer"></i><span>Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="patient.html" class="iq-waves-effect"><i class="ft-12 fa fa-user"></i><span>Patient</span></a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="p-3"></div>
+            </div>
+         </div>
+         <!-- Page Content  -->
+         <div id="content-page" class="content-page">
+            <!-- TOP Nav Bar -->
+            <div class="iq-top-navbar header-top-sticky">
+               <div class="iq-navbar-custom">
+                  <div class="iq-sidebar-logo">
+                     <div class="top-logo">
+                        <a href="index.html" class="logo">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                        <span></span>
+                        </a>
+                     </div>
+                  </div>
+                  <nav class="navbar navbar-expand-lg navbar-light p-0">
+                     <!-- <div class="logo-text-top">
+                        <span class="logo-text">RH<span class="logo-text-l">e</span>IMS</span>
+                        <span class="logo-text-sub-topbar">Remote Health Evaluation & Information Management System</span>
+                     </div> -->
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <i class="ri-menu-3-line"></i>
+                     </button>
+                     <div class="iq-menu-bt align-self-center">
+                        <div class="wrapper-menu">
+                           <div class="main-circle"><i class="ri-more-fill"></i></div>
+                           <div class="hover-circle"><i class="ri-more-2-fill"></i></div>
+                        </div>
+                     </div>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto navbar-list">
+                           <!-- <li class="nav-item">
+                              <a class="search-toggle iq-waves-effect language-title" href="#"><i style="font-size:20px;margin-right: 5px;" class="fa fa-map-marker" aria-hidden="true"></i> Tokoroa <i class="ft-12 fa fa-chevron-down"></i></a>
+                              <div class="iq-sub-dropdown">
+                                 <a class="iq-sub-card" href="#"><img src="images/small/flag-02.png" alt="img-flaf" class="img-fluid mr-2">French</a>
+                                 <a class="iq-sub-card" href="#"><img src="images/small/flag-03.png" alt="img-flaf" class="img-fluid mr-2">Spanish</a>
+                              </div>
+                           </li> -->
+                           <!-- <li class="nav-item iq-full-screen">
+                              <a href="#" class="iq-waves-effect" id="btnFullscreen"><i class="ri-fullscreen-line"></i></a>
+                              </li> -->
+                           <li class="nav-item">
+                              <a href="#" class="search-toggle iq-waves-effect">
+                              <i class="fa fa-bell"></i>
+                              <span class="bg-danger dots"></span>
+                              </a>
+                              <div class="iq-sub-dropdown">
+                                 <div class="iq-card shadow-none m-0">
+                                    <div class="iq-card-body p-0 ">
+                                       <div class="bg-primary p-3">
+                                          <h5 class="mb-0 text-white">All Notifications<small class="badge  badge-light float-right pt-1">4</small></h5>
+                                       </div>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/m.png" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">New Patient added</h6>
+                                                <small class="float-right font-size-12">1 min ago</small>
+                                                <p class="mb-0">Petey Cruiser</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/m.png" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Patient data updated</h6>
+                                                <small class="float-right font-size-12">5 min ago</small>
+                                                <p class="mb-0">Jond Bini</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/f.png" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Xray Report</h6>
+                                                <small class="float-right font-size-12">20 min ago</small>
+                                                <p class="mb-0">Anna Sthesia</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/f.png" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">New Patient added</h6>
+                                                <small class="float-right font-size-12">1 hour ago</small>
+                                                <p class="mb-0">Fenny</p>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </li>
+                           <li class="nav-item dropdown">
+                              <a href="#" class="search-toggle iq-waves-effect">
+                              <i class="fa fa-video-camera"></i>
+                              <span class="bg-primary count-mail"></span>
+                              </a>
+                              <div class="iq-sub-dropdown">
+                                 <div class="iq-card shadow-none m-0">
+                                    <div class="iq-card-body p-0 ">
+                                       <div class="bg-primary p-3">
+                                          <h5 class="mb-0 text-white">Make a Call<small class="badge  badge-light float-right pt-1"></small></h5>
+                                       </div>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/01.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Dr. Barb Dwyer</h6>
+                                                <small class="float-left font-size-12">Online</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Dr. Terry Aki 
+                                                   <small class="float-right font-size-12">
+                                                   <i class="fa fa-phone text-primary" title="Phone call"></i>
+                                                   </small>
+                                                </h6>
+                                                <small class="float-left font-size-12">Offline (last seen 5 min ago)
+                                                </small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/01.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Dr. Robin Banks
+                                                   <small class="float-right font-size-12">
+                                                   <i class="fa fa-phone text-primary" title="Phone call"></i>
+                                                   </small>
+                                                </h6>
+                                                <small class="float-left font-size-12">Offline (last seen 10 min ago)</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/04.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Dr. Barry Wine</h6>
+                                                <small class="float-left font-size-12">Online</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                       <a href="#" class="iq-sub-card" >
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/05.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Dr. Otto Matic</h6>
+                                                <small class="float-left font-size-12">Online</small>
+                                             </div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+
+
+                              <div class="iq-sub-dropdown" id="v-call-accept" style="display:none;">
+                                 <div class="iq-card shadow-none m-0">
+                                    <div class="iq-card-body p-0 ">
+                                       <div class="bg-primary p-3">
+                                          <h5 class="mb-0 text-white">Incoming Call<small class="badge  badge-light float-right pt-1"></small></h5>
+                                       </div>
+                                       <div class="iq-sub-card b-none">
+                                          <div class="media align-items-center">
+                                             <div class="">
+                                                <img class="avatar-40 rounded" src="images/user/01.jpg" alt="">
+                                             </div>
+                                             <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Dr. Barb Dwyer</h6>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="text-center mb-4">
+                                          
+                                          <button type="button" id="chat-start" class="btn bg-primary" onclick="pauseAudio()">
+                                             <a  data-toggle="pill" href="#video-call" style="color:#fff;">Accept</a>
+                                          </button>
+                                          <button id="cancel" onclick="pauseAudio()" type="button" class="btn btn-secondary">      Cancel
+                                          </button>
+                                          <audio id="audio" src="v-call.mp3" loop="loop"></audio>
+                                       </div>
+                                       
+                                    </div>
+                                 </div>
+                              </div>
+
+                           </li>
+                        </ul>
+                     </div>
+                     <ul class="navbar-list">
+                        <li>
+                           <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
+                              <img src="images/user/1.jpg" class="img-fluid rounded mr-3" alt="user">
+                              <div class="caption">
+                                 <span class="font-size-12">Marilyn Rose</span>
+                                 <h6 class="mb-0 line-height">Maori Community Nurse</h6>
+                              </div>
+                           </a>
+                           <div class="iq-sub-dropdown iq-user-dropdown">
+                              <div class="iq-card shadow-none m-0">
+                                 <div class="iq-card-body p-0 ">
+                                    <div class="bg-primary p-3">
+                                       <h5 class="mb-0 text-white line-height"></h5>
+                                       <span class="text-white font-size-12">Available</span>
+                                    </div>
+                                    <a href="profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                       <div class="media align-items-center">
+                                          <div class="rounded iq-card-icon iq-bg-primary">
+                                             <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="media-body ml-3">
+                                             <h6 class="mb-0 ">My Profile</h6>
+                                             <p class="mb-0 font-size-12">View personal profile details.</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <a href="profile-edit.html" class="iq-sub-card iq-bg-primary-hover">
+                                       <div class="media align-items-center">
+                                          <div class="rounded iq-card-icon iq-bg-primary">
+                                             <i class="fa fa-address-card" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="media-body ml-3">
+                                             <h6 class="mb-0 ">Edit Profile</h6>
+                                             <p class="mb-0 font-size-12">Modify your personal details.</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <a href="account-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                       <div class="media align-items-center">
+                                          <div class="rounded iq-card-icon iq-bg-primary">
+                                             <i class="fa fa-cog" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="media-body ml-3">
+                                             <h6 class="mb-0 ">Account settings</h6>
+                                             <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <a href="privacy-setting.html" class="iq-sub-card iq-bg-primary-hover">
+                                       <div class="media align-items-center">
+                                          <div class="rounded iq-card-icon iq-bg-primary">
+                                             <i class="fa fa-lock" aria-hidden="true"></i>
+                                          </div>
+                                          <div class="media-body ml-3">
+                                             <h6 class="mb-0 ">Privacy Settings</h6>
+                                             <p class="mb-0 font-size-12">Control your privacy parameters.</p>
+                                          </div>
+                                       </div>
+                                    </a>
+                                    <div class="d-inline-block w-100 text-center p-3">
+                                       <a class="bg-primary iq-sign-btn" href="sign-in-c.html" role="button">Sign out <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+            <!-- TOP Nav Bar END -->
+
+            
+            <div class="container-fluid">
+      <div class="chat-full-screen">
+         <div class="chat-container">
+            <div class="chat-data-left">
+               <div class="chat-head">
+                  <header class="">
+                     <div class="chat-header-icons d-flex justify-content-between align-items-center">
+                        <div id="chatlistbtn" class="display-none chat-icon-btn ">
+                           <i class="fa fa-comments-o iq-bg-primary" aria-hidden="true"></i>
+                           <span>Chat List</span>
+                        </div>
+                        <div id="newchat" class="chat-icon-btn" ng-click="createNewChat()">
+                           <i class="fa fa-plus iq-bg-primary" aria-hidden="true"></i>
+                           <span class="ng-binding">New Conversation</span>
+                        </div>
+                        <button type="submit" class="close-btn-res"><i class="fa fa-close"></i></button>
+                     </div>
+                  </header>
+                  <discussion-list config="discussionListConfigurer" default-discussion-uuid="0" class="ng-isolate-scope"><div class="chat-head">
+   <header class="">
+      <div class="d-flex justify-content-between align-items-center">
+         <!-- <h5 id="recentchat-h" class="mb-0">Recent Chat</h5>
+          <h5 id="recentchatuser-h" class="display-none mb-0">Sheethal, Pallavi</h5> -->
+         <div class="d-flex chatlist_search_form">
+            <input maxlength="100" type="text" ng-model="$ctrl.serachKey" ng-model-options="{debounce: 500}" ng-change="$ctrl.serachParamChangeEvent()" required="required" class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-maxlength" placeholder="Search by user name/topic">
+         </div>
+      </div>
+   </header>
+</div>
+<div class="main-chat-list chat-sidebar-channel scroller pr-3 chat-block">
+   <ul id="chatlist" class="iq-chat-ui nav flex-column nav-pills">
+      <!-- ngRepeat: discussion in $ctrl.discussions --><li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new iq-chat-list-active" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/theme/chat/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">call testing three participants</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 1 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: three participants call testing</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li><!-- end ngRepeat: discussion in $ctrl.discussions --><li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/theme/chat/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-08</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">conversation with cal</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser</h6>
+                  <h6 class="chat-description ng-binding">Description: conversation with cal</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li><!-- end ngRepeat: discussion in $ctrl.discussions --><li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/theme/chat/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">Diagnosis : William James</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 5 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: To discuss regarding diagnosis of William James</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li><!-- end ngRepeat: discussion in $ctrl.discussions -->
+   </ul>
+</div></discussion-list> 
+               </div>
+            </div>
+
+
+
+
+            <!-- ngIf: activeView == 'MESSAGE' --><div class="chat-data-conversation ng-scope" ng-if="activeView == 'MESSAGE'">
+               <chat-message-component discussion-uuid="selectedDiscussionUuid" discussion-owner="selectedDiscussionOwner" class="chat-msg-out-div ng-isolate-scope"><div class="col-lg-12">
+   <div class="chat-data chat-data-right p-0" id="chatbox">
+      <div class="respchat-header">
+         <div class="respchat-togglebtn">
+            <div class="respchat-togglebtn1">
+               <i class="fa fa-angle-left"></i> <span>Chat List</span>
+            </div>
+            <div class="respchat-togglebtn2">
+               <i class="fa fa-list"></i> <span>More options</span>
+            </div>
+         </div>
+         <div class="chat-topic-h2">
+            <h5 class="mb-0">call testing three participants call testing three participants</h5>
+         </div>
+      </div>
+      <!-- ngIf: $ctrl.showLoading -->
+      <div class="chat-head-des ">
+         <header class="d-flex justify-content-between align-items-center pt-3 pr-3 pb-3">
+            <div class="chat-topic-border">
+               <div class="w-100">
+                  <div id="sidebar-toggle" class="sidebar-toggle">
+                     <i class="fa fa-list"></i>
+                  </div>
+                  <div class="chat-topic-h2">
+                     <h5 class="mb-0 ml-2 ng-binding">call testing three participants
+                     </h5>
+                  </div>
+                  <div class="chat-topic-h5">
+                     <h5 class="mb-0 ml-2 chat-topic-tooltip ng-binding">Description:
+                        three participants call testing
+                        <span class="chat-tooltiptext ng-binding">three participants call testing</span>
+                     </h5>
+                  </div>
+               </div>
+               <div class="w-100">
+                  <div class="chat-user-list-hide">
+                     <!-- ngRepeat: member in $ctrl.discussionInfo.memberlist --><member-info-status ng-repeat="member in $ctrl.discussionInfo.memberlist" uuid="member.uuid" name="member.name" status="member.status" class="ng-scope ng-isolate-scope"><!-- <div>
+   {{$ctrl.name}} {{$ctrl.status}}
+</div> -->
+<div class="ml-2 ng-binding">
+   <i class="ml-1 fa fa-circle text-success" ng-class="{'text-success':$ctrl.status == 'ONLINE','text-disable':$ctrl.status == 'OFFLINE'}"></i>
+   nurseuser nurseuser
+</div></member-info-status><!-- end ngRepeat: member in $ctrl.discussionInfo.memberlist --><member-info-status ng-repeat="member in $ctrl.discussionInfo.memberlist" uuid="member.uuid" name="member.name" status="member.status" class="ng-scope ng-isolate-scope"><!-- <div>
+   {{$ctrl.name}} {{$ctrl.status}}
+</div> -->
+<div class="ml-2 ng-binding">
+   <i class="ml-1 fa fa-circle text-success" ng-class="{'text-success':$ctrl.status == 'ONLINE','text-disable':$ctrl.status == 'OFFLINE'}"></i>
+   Cal Daniel
+</div></member-info-status><!-- end ngRepeat: member in $ctrl.discussionInfo.memberlist --><member-info-status ng-repeat="member in $ctrl.discussionInfo.memberlist" uuid="member.uuid" name="member.name" status="member.status" class="ng-scope ng-isolate-scope"><!-- <div>
+   {{$ctrl.name}} {{$ctrl.status}}
+</div> -->
+<div class="ml-2 ng-binding">
+   <i class="ml-1 fa fa-circle text-success" ng-class="{'text-success':$ctrl.status == 'ONLINE','text-disable':$ctrl.status == 'OFFLINE'}"></i>
+   Reahb Nurse
+</div></member-info-status><!-- end ngRepeat: member in $ctrl.discussionInfo.memberlist -->
+                  </div>
+               </div>
+            </div>
+            <div class="chat-header-icons d-flex">
+               <div class="chat-mrn-header">
+                  <span class="text-nowrap mr-2 float-right ng-binding">Created :
+                     2023-09-15</span><br>
+                  <span class="text-nowrap mr-2 float-right ng-binding"></span>
+               </div>
+               <a data-toggle="pill" ng-click="$ctrl.onCallVideoClickEvent()" class="chat-icon-video iq-bg-primary">
+                  <i class="fa fa-video-camera" aria-hidden="true"></i>
+               </a>
+            </div>
+         </header>
+      </div>
+
+      <!-- <div class="chat-content scroller main-chat-content chat-block2" scroll-bottom="$ctrl.messages" ng-show = "!$ctrl.showFileUpload"  -->
+      <div class="chat-content scroller main-chat-content chat-block2" id="msg-scoller-container" on-scroll-to-bottom="$ctrl.lazyMessageLoader.scrollToBottomEvent()" on-scroll-to-top="$ctrl.lazyMessageLoader.scrollToTopEvent()">
+         <!-- message box -->
+         <!-- ngRepeat: message in $ctrl.messages --><div class="chat ng-scope chat-left" ng-repeat="message in $ctrl.messages" id="chat_6253" ng-class="{'chat-left':message.creator.uuid != $ctrl.loggedUserUuid}">
+            <div class="chat-user">
+               <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid --><profile-image-viewer class="profile-img-chat-msg ng-scope ng-isolate-scope" ng-if="message.creator.uuid != $ctrl.loggedUserUuid" key="message.creator.profilePicKey">
+                        <img ng-src="/images/theme/user/1.jpg" src="/images/theme/user/1.jpg">
+                    </profile-image-viewer><!-- end ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+            </div>
+            <div class="chat-detail">
+               <div class="chat-message chat-message-custome">
+                  <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid --><p class="chat-person-name ng-binding ng-scope" ng-if="message.creator.uuid != $ctrl.loggedUserUuid">
+                     nurseuser nurseuser</p><!-- end ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+                  <div class="chat-file-view-container">
+                     <!-- ngRepeat: fileKey in message.fileKeys -->
+                  </div>
+                  <div class="chat-file-des">
+                     <p class="chat-file-des-msg ng-binding">Hi</p>
+                     <p class="ng-binding">15/09/23 03:43</p>
+                  </div>
+               </div>
+            </div>
+         </div><!-- end ngRepeat: message in $ctrl.messages --><div class="chat ng-scope chat-left" ng-repeat="message in $ctrl.messages" id="chat_6254" ng-class="{'chat-left':message.creator.uuid != $ctrl.loggedUserUuid}">
+            <div class="chat-user">
+               <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid --><profile-image-viewer class="profile-img-chat-msg ng-scope ng-isolate-scope" ng-if="message.creator.uuid != $ctrl.loggedUserUuid" key="message.creator.profilePicKey">
+                        <img ng-src="/images/theme/user/1.jpg" src="/images/theme/user/1.jpg">
+                    </profile-image-viewer><!-- end ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+            </div>
+            <div class="chat-detail">
+               <div class="chat-message chat-message-custome">
+                  <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid --><p class="chat-person-name ng-binding ng-scope" ng-if="message.creator.uuid != $ctrl.loggedUserUuid">
+                     nurseuser nurseuser</p><!-- end ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+                  <div class="chat-file-view-container">
+                     <!-- ngRepeat: fileKey in message.fileKeys -->
+                  </div>
+                  <div class="chat-file-des">
+                     <p class="chat-file-des-msg ng-binding">Call testing..</p>
+                     <p class="ng-binding">15/09/23 03:43</p>
+                  </div>
+               </div>
+            </div>
+         </div><!-- end ngRepeat: message in $ctrl.messages --><div class="chat ng-scope" ng-repeat="message in $ctrl.messages" id="chat_6255" ng-class="{'chat-left':message.creator.uuid != $ctrl.loggedUserUuid}">
+            <div class="chat-user">
+               <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+            </div>
+            <div class="chat-detail">
+               <div class="chat-message chat-message-custome">
+                  <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+                  <div class="chat-file-view-container">
+                     <!-- ngRepeat: fileKey in message.fileKeys -->
+                  </div>
+                  <div class="chat-file-des">
+                     <p class="chat-file-des-msg ng-binding">hi</p>
+                     <p class="ng-binding">15/09/23 03:45</p>
+                  </div>
+               </div>
+            </div>
+         </div><!-- end ngRepeat: message in $ctrl.messages --><div class="chat ng-scope" ng-repeat="message in $ctrl.messages" id="chat_6256" ng-class="{'chat-left':message.creator.uuid != $ctrl.loggedUserUuid}">
+            <div class="chat-user">
+               <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+            </div>
+            <div class="chat-detail">
+               <div class="chat-message chat-message-custome">
+                  <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+                  <div class="chat-file-view-container">
+                     <!-- ngRepeat: fileKey in message.fileKeys --><div class="chat-file-view ng-scope" ng-repeat="fileKey in message.fileKeys">
+                        <downloadable-document inline="false" link="doc/storage/download/rOBbesgWTANwzReKKZxrBggOGHNYgD" class="ng-isolate-scope">
+                   <!-- ngIf: $ctrl.inline == true -->
+                   <!-- ngIf: $ctrl.inline == false --><section ng-if="$ctrl.inline == false" ng-click="$ctrl.downloadFile()" ng-transclude="" class="ng-scope">
+                           
+                        </section><!-- end ngIf: $ctrl.inline == false -->
+                   </downloadable-document>
+                     </div><!-- end ngRepeat: fileKey in message.fileKeys -->
+                  </div>
+                  <div class="chat-file-des">
+                     <p class="chat-file-des-msg ng-binding"></p>
+                     <p class="ng-binding">15/09/23 03:45</p>
+                  </div>
+               </div>
+            </div>
+         </div><!-- end ngRepeat: message in $ctrl.messages --><div class="chat ng-scope" ng-repeat="message in $ctrl.messages" id="chat_6257" ng-class="{'chat-left':message.creator.uuid != $ctrl.loggedUserUuid}">
+            <div class="chat-user">
+               <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+            </div>
+            <div class="chat-detail">
+               <div class="chat-message chat-message-custome">
+                  <!-- ngIf: message.creator.uuid != $ctrl.loggedUserUuid -->
+                  <div class="chat-file-view-container">
+                     <!-- ngRepeat: fileKey in message.fileKeys --><div class="chat-file-view ng-scope" ng-repeat="fileKey in message.fileKeys">
+                        <downloadable-document inline="false" link="doc/storage/download/MqdJjrzhSAuKmyuVJPFOMCkqzYdqXY" class="ng-isolate-scope">
+                   <!-- ngIf: $ctrl.inline == true -->
+                   <!-- ngIf: $ctrl.inline == false --><section ng-if="$ctrl.inline == false" ng-click="$ctrl.downloadFile()" ng-transclude="" class="ng-scope">
+                           
+                        </section><!-- end ngIf: $ctrl.inline == false -->
+                   </downloadable-document>
+                     </div><!-- end ngRepeat: fileKey in message.fileKeys -->
+                  </div>
+                  <div class="chat-file-des">
+                     <p class="chat-file-des-msg ng-binding"></p>
+                     <p class="ng-binding">15/09/23 03:46</p>
+                  </div>
+               </div>
+            </div>
+         </div><!-- end ngRepeat: message in $ctrl.messages -->
+         <!-- message box end -->
+      </div>
+
+      <div class="chat-footer bg-white">
+         <!-- ngIf: $ctrl.showFileUpload -->
+         <form class="d-flex align-items-center ng-pristine ng-valid" action="javascript:void(0);">
+            <div class="chat-attagement d-flex image-upload-chat">
+               <label for="fileinput">
+                  <i class="fa fa-paperclip pr-3" aria-hidden="true"></i>
+               </label>
+               <input type="file" id="fileinput" accept="image/*" name="input-file-preview" multiple="multiple">
+            </div>
+            <input type="text" ng-model="$ctrl.newMessageText" class="form-control mr-3 ng-pristine ng-untouched ng-valid ng-empty" placeholder="Type your message">
+            <button type="submit" ng-click="$ctrl.sendMessage()" class="btn btn-primary d-flex align-items-center p-2"><i class="fa fa-paper-plane-o" aria-hidden="true"></i><span class="d-none d-lg-block ml-1 ng-binding">Send</span></button>
+         </form>
+      </div>
+   </div>
+</div></chat-message-component>
+            </div><!-- end ngIf: activeView == 'MESSAGE' -->
+            <!-- ngIf: activeView == 'MESSAGE' --><div class="chat-sidebar-right ng-scope" ng-if="activeView == 'MESSAGE'">
+               <discussion-info-component discussion-uuid="8c157513-b810-4847-a144-c208bdfb29ad" class="ng-isolate-scope"><div class="chat-head-sidebar bg-white">
+   <div class="chat-topic-border-sidebar">
+
+
+      <div class="respchat-header">
+         <div class="respchat-togglebtn">
+            <div class="respchat-togglebtn1">
+                <i class="fa fa-angle-left"></i> <span>Chat List</span>
+             </div>
+            <div class="respchat-togglebtn3">
+                <i class="fa fa-angle-left"></i> <span>Conversation</span>
+             </div>
+         </div>
+      </div>
+      
+
+
+      <div class="w-100">
+         <div class="chat-topic-h2">
+            <h5 class="mb-0 ng-binding">call testing three participants
+            </h5>
+         </div>
+         <div class="chat-topic-h5">
+            <h5 class="mb-0 chatsidebar-topic-tooltip ng-binding">Description: three participants call testing: 
+               three participants c
+            <span class="chatsidebar-tooltiptext ng-binding">three participants call testing </span>
+            </h5>
+         </div>
+      </div>
+      
+      <div class="w-100">
+         <span class="chat-created text-primary ng-binding">Created on : 2023-09-15</span>
+         
+      </div>
+      <div class="w-100">
+         <span class="chat-created text-primary ng-binding">Created by : nurseuser nurseuser</span>
+      </div>
+      <div class="w-100">
+         <div class="chat-user-list-hide">
+            <h5 class="mb-0">Participants 
+               <!-- <has-relation none = "['patient']">
+                  <span ng-click = "$ctrl.addMembersComponentHandler.onAddMemberClickEvent()"
+                  ng-if = "$ctrl.userData.uuid == $ctrl.discussionInfo.creator.uuid"
+                  class = "chat-add-link">Add users</span>
+              </has-privilege> -->
+            </h5>
+            <div class="user-online-status-container">
+               <!-- ngRepeat: member in $ctrl.discussionInfo.memberlist --><member-info-status ng-repeat="member in $ctrl.discussionInfo.memberlist" uuid="member.uuid" name="member.name" status="member.status" class="ng-scope ng-isolate-scope"><!-- <div>
+   {{$ctrl.name}} {{$ctrl.status}}
+</div> -->
+<div class="ml-2 ng-binding">
+   <i class="ml-1 fa fa-circle text-success" ng-class="{'text-success':$ctrl.status == 'ONLINE','text-disable':$ctrl.status == 'OFFLINE'}"></i>
+   nurseuser nurseuser
+</div></member-info-status><!-- end ngRepeat: member in $ctrl.discussionInfo.memberlist --><member-info-status ng-repeat="member in $ctrl.discussionInfo.memberlist" uuid="member.uuid" name="member.name" status="member.status" class="ng-scope ng-isolate-scope"><!-- <div>
+   {{$ctrl.name}} {{$ctrl.status}}
+</div> -->
+<div class="ml-2 ng-binding">
+   <i class="ml-1 fa fa-circle text-success" ng-class="{'text-success':$ctrl.status == 'ONLINE','text-disable':$ctrl.status == 'OFFLINE'}"></i>
+   Cal Daniel
+</div></member-info-status><!-- end ngRepeat: member in $ctrl.discussionInfo.memberlist --><member-info-status ng-repeat="member in $ctrl.discussionInfo.memberlist" uuid="member.uuid" name="member.name" status="member.status" class="ng-scope ng-isolate-scope"><!-- <div>
+   {{$ctrl.name}} {{$ctrl.status}}
+</div> -->
+<div class="ml-2 ng-binding">
+   <i class="ml-1 fa fa-circle text-success" ng-class="{'text-success':$ctrl.status == 'ONLINE','text-disable':$ctrl.status == 'OFFLINE'}"></i>
+   Reahb Nurse
+</div></member-info-status><!-- end ngRepeat: member in $ctrl.discussionInfo.memberlist -->
+            </div>
+            <has-relation none="['patient']" class="ng-isolate-scope"><!-- ngIf: $ctrl.show --><ng-transclude ng-if="$ctrl.show" class="ng-scope">
+               <!-- ngIf: $ctrl.userData.uuid == $ctrl.discussionInfo.creator.uuid -->
+            </ng-transclude><!-- end ngIf: $ctrl.show --></has-relation>
+            <!-- <div class="w-100"> <i class="ml-2 fa fa-circle text-success"></i> Evelyn Jackson vi</div>
+            <div class="w-100"> <i class="ml-2 fa fa-circle text-disable"></i> Paul Molive </div>
+            <div class="w-100"> <i class="ml-2 fa fa-circle text-success"></i> Cardiologist </div> -->
+         </div>
+      </div>
+      
+      <!-- <button ng-click = "$ctrl.addMembersComponentHandler.onAddMemberClickEvent()" >Add members</button> -->
+      <!-- <div ng-if = "$ctrl.isAnyMemberOtherThanLoggedUserOnline()"> -->
+      
+      <div>
+         <div class="start_videocall_btn chat-header-icons d-flex justify-content-center" ng-click="$ctrl.onCallVideoClickEvent()">
+            <a data-toggle="pill" class="chat-icon-video iq-bg-primary">
+               <i class="fa fa-video-camera" aria-hidden="true"></i>
+            </a>
+         </div>
+         <div class="w-100 text-center">
+            <span class=""><strong class="text-primary">Start a video call</strong>  </span>
+         </div>
+      </div>
+
+      <!-- Call History -->
+
+      <!-- ngIf: $ctrl.recentCallLogHandler.listOfCalls.length --><div class="call-history-section-lg ng-scope" ng-if="$ctrl.recentCallLogHandler.listOfCalls.length">
+         <h5 class="call-history-head mb-0" id="show-popup">Call History</h5>
+         <div class="call-history-list" id="dis-call-list-container" on-scroll-to-bottom="$ctrl.recentCallLogHandler.scrollToEnd()">
+            <ul class="iq-missed-list-ui nav flex-column nav-pills">
+               <!-- ngRepeat: callLog in $ctrl.recentCallLogHandler.listOfCalls --><li ng-repeat="callLog in $ctrl.recentCallLogHandler.listOfCalls" id="call_log_0" class="ng-scope">
+                  <!-- ngIf: callLog.attendedStatus == 'ATTENDED' --><a data-toggle="pill" ng-if="callLog.attendedStatus == 'ATTENDED'" class="ng-scope">
+                     <div class="d-flex align-items-center">
+                        <div class="received-call">
+                           <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="call-history-topic">
+                           <!-- ngIf: callLog.callInitiatedBy.uuid == $ctrl.userData.uuid --><h6 class="mb-0 ng-scope" ng-if="callLog.callInitiatedBy.uuid == $ctrl.userData.uuid">Outgoing call</h6><!-- end ngIf: callLog.callInitiatedBy.uuid == $ctrl.userData.uuid -->
+                           <!-- ngIf: callLog.callInitiatedBy.uuid != $ctrl.userData.uuid -->
+                           <div class="w-100 ng-binding">
+                              2023-09-15 10:21 AM
+                           </div>
+                        </div>
+                     </div>
+                  </a><!-- end ngIf: callLog.attendedStatus == 'ATTENDED' -->
+                  <!-- ngIf: callLog.attendedStatus == 'MISSED' -->
+                  <!-- ngIf: callLog.attendedStatus == 'DECLINED' -->
+               </li><!-- end ngRepeat: callLog in $ctrl.recentCallLogHandler.listOfCalls --><li ng-repeat="callLog in $ctrl.recentCallLogHandler.listOfCalls" id="call_log_1" class="ng-scope">
+                  <!-- ngIf: callLog.attendedStatus == 'ATTENDED' --><a data-toggle="pill" ng-if="callLog.attendedStatus == 'ATTENDED'" class="ng-scope">
+                     <div class="d-flex align-items-center">
+                        <div class="received-call">
+                           <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="call-history-topic">
+                           <!-- ngIf: callLog.callInitiatedBy.uuid == $ctrl.userData.uuid --><h6 class="mb-0 ng-scope" ng-if="callLog.callInitiatedBy.uuid == $ctrl.userData.uuid">Outgoing call</h6><!-- end ngIf: callLog.callInitiatedBy.uuid == $ctrl.userData.uuid -->
+                           <!-- ngIf: callLog.callInitiatedBy.uuid != $ctrl.userData.uuid -->
+                           <div class="w-100 ng-binding">
+                              2023-09-15 10:16 AM
+                           </div>
+                        </div>
+                     </div>
+                  </a><!-- end ngIf: callLog.attendedStatus == 'ATTENDED' -->
+                  <!-- ngIf: callLog.attendedStatus == 'MISSED' -->
+                  <!-- ngIf: callLog.attendedStatus == 'DECLINED' -->
+               </li><!-- end ngRepeat: callLog in $ctrl.recentCallLogHandler.listOfCalls -->
+            </ul>
+         </div>
+      </div><!-- end ngIf: $ctrl.recentCallLogHandler.listOfCalls.length -->
+
+      <!-- Call History -->
+      <!-- <member-list-component  
+         ng-if="$ctrl.showAddNewMembers" 
+         url = "/chat/user/getnewmembers/{{$ctrl.discussionUuid}}" 
+         config="$ctrl.newMemberSelectConfigurer">
+      </member-list-component> -->
+   </div>
+</div>
+   
+<!-- ngIf: $ctrl.addMembersComponentHandler.showPopUp -->
+
+</discussion-info-component>
+            </div><!-- end ngIf: activeView == 'MESSAGE' -->
+            <!-- ngIf: activeView == 'NEWCHAT' -->
+            <div class="create-new-conversation ng-scope" ng-if="activeView == 'NEWCHAT'">
+               <new-chat config="newChantConfigObject" is-patient="ispatient" class="ng-isolate-scope"><div id="newconversation" class="row ng-pristine ng-invalid ng-invalid-required" ng-form="chatForm">
+   <div class="col-lg-12">
+      <div class="chat-data chat-data-right p-0">
+         
+         <div class="new-conversation">
+            <div class="respchat-header">
+               <div class="respchat-togglebtn">
+                  <div class="respchat-togglebtn1">
+                      <i class="fa fa-angle-left"></i> <span>Chat List</span>
+                   </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-9">
+                  <div class="row">
+                  </div>
+                  <div class="row">
+                     <div class="col-md-8">
+                        <div class="form-group text-capitalize">
+                           <label class="ng-binding">Topic (Name)</label>
+                           <input type="text" ng-model="$ctrl.info.topic" class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-required" name="topic" placeholder="" ng-required="$ctrl.info.type == 'GENERIC'">
+                           <div class="invalid-feedback ng-binding ng-hide" ng-show="chatForm.topic.$error.required">
+                              Topic is required</div>
+                        </div>
+                     </div>
+                     <!-- ngIf: $ctrl.showDiscussionWithPatientToggle -->
+                  </div>
+                  <!-- ngIf: !$ctrl.topicWithPatient --><div class="row ng-scope" ng-if="!$ctrl.topicWithPatient">
+                     <div class="col-md-8">
+                        <div id="reffer_to" class="mt-2 mb-3 chat-icon-btn">
+                           <i class="fa fa-plus iq-bg-primary" ng-click="$ctrl.addUsersClickEvent()" aria-hidden="true"></i>
+                           <span class="ng-binding">Add Users</span>
+                        </div>
+                     </div>
+                  </div><!-- end ngIf: !$ctrl.topicWithPatient -->
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="user-selected-for-chat">
+                           <!-- ngRepeat: member in $ctrl.members -->
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="form-group">
+                           <label class="ng-binding">Description</label>
+                           <textarea class="form-control ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" ng-model="$ctrl.info.description" rows="3" required="true" name="description"></textarea>
+                           <div class="invalid-feedback ng-binding" ng-show="chatForm.description.$error.required">
+                              Description is required</div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- ngIf: chatForm.$valid -->
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- add user popup -->
+   <!-- ngIf: $ctrl.showUsersList && !$ctrl.chatWithPatient -->
+
+</div>
+</new-chat>
+            </div>
+         </div>
+      </div>
+
+      <!-- <div class="col-lg-9 chat-data p-0 chat-data-right">
+         <div class="tab-content"> -->
+      <!-- <new-chat config="newChantConfigObject" ng-if="activeView == 'NEWCHAT'" is-patient="ispatient">
+      </new-chat> -->
+
+   </div>
+
+
+               
+            
+
+            
+
+            
+         </div>
+      </div>
+      <!-- Wrapper END -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Wow JavaScript -->
+      <script src="js/wow.min.js"></script>
+      <!-- Select2 JavaScript -->
+      <script src="js/select2.min.js"></script>
+      <!-- Magnific Popup JavaScript -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Smooth Scrollbar JavaScript -->
+      <script src="js/smooth-scrollbar.js"></script>
+      <!-- am core JavaScript -->
+      <script src="js/core.js"></script>
+     
+      <!-- Custom JavaScript -->
+      <script src="js/custom.js"></script>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script>
+
+$(document).ready(function() {
+  // Hide the maximize button by default
+  $("#max-btn").hide();
+
+  $('#max-btn').click(function() {
+    // Switch to the maximized state
+    $("#max-btn").hide();
+    $("#min-btn").show();
+    $('.videocall_modal-xl').css({
+      position: 'fixed',
+      height: '90%',
+      width: '90%',
+      bottom: 'auto',
+      right: 'auto',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      transition: 'none',
+    });
+    $('.video-call-container').css({
+      height: '100%', 
+    });
+    $('.videocall_overlay').show();
+    $('.video-call-img i').css({
+      height: '80px',
+      width: '80px',
+      fontsize: '30px',
+    });
+    $('.preview-section .sub-container-right').css({
+      display: 'block',
+    });
+    $('.video-call-outer').each(function() {
+      $(this).children(':not(:first-child)').show();
+    });
+    $('.video-call-actions').css({
+      position: 'absolute', 
+      bottom: '5px',
+      display: 'block',
+    });
+    $(".modal-video-body").hover(function(){
+      $('.video-call-actions').show();
+    },function(){
+      $('.video-call-actions').show();
+    });
+    $('.video-call-block:not(:only-child)').css({
+        'height': '50%',
+        'flex': '0 0 calc(33.33% - 10px)'
+    });
+    $('.video-call-img i').css({
+      'font-size': '30px',    
+    });
+  });
+
+  $('#min-btn').click(function() {
+    // Switch to the minimized state
+    $("#max-btn").show();
+    $("#min-btn").hide();
+    $('.videocall_modal-xl').css({
+      position: 'fixed',
+      height: '30%',
+      width: '25%',
+      bottom: '0',
+      right: '0',
+      top: 'auto',
+      left: 'auto',
+      transform: 'none',
+      transition: 'all 0.5s ease',
+    });
+    $('.video-call-container').css({
+      height: '100%', 
+    });
+    $('.videocall_overlay').hide();
+    $('.video-call-img i').css({
+      height: '40px',
+      width: '40px',
+      fontsize: '12px',
+    });
+    $('.preview-section').css({
+      padding: '0px',
+      height: '100%',
+    });
+    $('.preview-section .sub-container-right').css({
+      display: 'none',
+    });
+    $('.video-call-actions').css({
+      position: 'absolute',
+      bottom: '5px',
+      display: 'none',
+    });
+    $(".modal-video-body").hover(function(){
+      $('.video-call-actions').show();
+    },function(){
+      $('.video-call-actions').hide();
+    });
+    $('.video-call-outer').each(function() {
+      $(this).children(':not(:first-child)').hide();
+    });
+    $('.video-call-block:not(:only-child)').css({
+        'height': '100%',
+        'flex': '0 0 calc(100% - 10px)'
+    });
+    $('.video-call-img i').css({
+      'font-size': '20px',    
+    });
+  });
+
+ /* $('#video_closebtn').click(function() {
+   // Hide the video call section
+   $('.videocall_modal-xl').css({
+      display: 'none',
+    });
+   $('.videocall_overlay').css({
+      display: 'none',
+    });
+  });*/
+  
+});
+
+
+// Chat responsive screen toggle button controlls
+$(document).ready(function() {
+    // Function to set z-index and toggle visibility classes
+    function setVisibilityAndZIndex(target, zIndex) {
+        $(".chat-container > div").removeClass("visible").css("z-index", 0);
+        target.addClass("visible").css("z-index", zIndex);
+    }
+
+    // Click event handlers for responsive behavior
+    $(".respchat-togglebtn1").on("click", function() {
+        setVisibilityAndZIndex($(".chat-data-left"), 1);
+    });
+
+    $(".respchat-togglebtn2").on("click", function() {
+        setVisibilityAndZIndex($(".chat-sidebar-right"), 2);
+    });
+
+    $(".respchat-togglebtn3").on("click", function() {
+        setVisibilityAndZIndex($(".chat-data-conversation"), 3);
+    });
+
+    $("#newchat").on("click", function() {
+        setVisibilityAndZIndex($(".create-new-conversation"), 4);
+    });
+
+    // Click event handler for chatlist li elements
+    $("#chatlist li").on("click", function() {
+        setVisibilityAndZIndex($(".chat-data-conversation"), 3);
+    });
+
+    // Initial state (show chat-data-left)
+    setVisibilityAndZIndex($(".chat-data-left"), 1);
+});
+
+    
+      </script>
+      
+
+   </body>
+</html>
+
