@@ -195,7 +195,7 @@
     	height: calc(100vh - 35.5rem);
 	}
 	.chat-block {
-	    height: calc(100vh - 224px - 60px) !important;
+	    height: calc(100% - 120px - 30px) !important;
 	}
 	.chat-block2 {
 	    height: calc(100% - 120px - 30px) !important;
