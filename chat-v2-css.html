@@ -389,8 +389,9 @@
    </header>
 </div>
 <div class="main-chat-list chat-sidebar-channel scroller pr-3 chat-block">
-   <ul id="chatlist" class="iq-chat-ui nav flex-column nav-pills">
-      <!-- ngRepeat: discussion in $ctrl.discussions --><li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+      <ul id="chatlist" class="iq-chat-ui nav flex-column nav-pills">
+      <!-- ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
          <div class="iq-chat-list-new iq-chat-list-active" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
             <div class="d-flex align-items-center">
                <div class="avatar mr-2">
@@ -412,7 +413,9 @@
                   discussion.showUnseenCound -->
             </div>
          </div>
-      </li><!-- end ngRepeat: discussion in $ctrl.discussions --><li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
          <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
             <div class="d-flex align-items-center">
                <div class="avatar mr-2">
@@ -434,7 +437,9 @@
                   discussion.showUnseenCound -->
             </div>
          </div>
-      </li><!-- end ngRepeat: discussion in $ctrl.discussions --><li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
          <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
             <div class="d-flex align-items-center">
                <div class="avatar mr-2">
@@ -456,7 +461,227 @@
                   discussion.showUnseenCound -->
             </div>
          </div>
-      </li><!-- end ngRepeat: discussion in $ctrl.discussions -->
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <!-- ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new iq-chat-list-active" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">call testing three participants</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 1 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: three participants call testing</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-08</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">conversation with cal</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser</h6>
+                  <h6 class="chat-description ng-binding">Description: conversation with cal</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">Diagnosis : William James</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 5 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: To discuss regarding diagnosis of William James</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <!-- ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new iq-chat-list-active" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">call testing three participants</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 1 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: three participants call testing</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-08</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">conversation with cal</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser</h6>
+                  <h6 class="chat-description ng-binding">Description: conversation with cal</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">Diagnosis : William James</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 5 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: To discuss regarding diagnosis of William James</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <!-- ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new iq-chat-list-active" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">call testing three participants</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 1 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: three participants call testing</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-08</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">conversation with cal</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser</h6>
+                  <h6 class="chat-description ng-binding">Description: conversation with cal</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
+      <li id="chatperson1" ng-repeat="discussion in $ctrl.discussions" class="ng-scope">
+         <div class="iq-chat-list-new" ng-class="{'iq-chat-list-active':$ctrl.selectedDiscussion.discussionUuid ==  discussion.discussionUuid }" ng-click="$ctrl.discussionClickEvent(discussion)">
+            <div class="d-flex align-items-center">
+               <div class="avatar mr-2">
+                  <img src="images/user/group.png" alt="chatuserimage" class="avatar-50 rounded">
+               </div>
+               <div class="chat-details">
+                  <div class="chat-mrn-date">
+                     <span class="text-nowrap float-right ng-binding">2023-09-15</span>
+                     <span class="text-nowrap mr-2 float-right ng-binding"></span>
+                  </div>
+                  <div class="chat-topic">
+                     <h6 class="ng-binding">Diagnosis : William James</h6>
+                  </div>
+                  <h6 class="mb-0 chat-users ng-binding">nurseuser nurseuser and 5 others.</h6>
+                  <h6 class="chat-description ng-binding">Description: To discuss regarding diagnosis of William James</h6>
+               </div>
+               <!-- if its one of the selected entity then do no show the count  -->
+               <!-- ngIf: $ctrl.selectedDiscussion.discussionUuid !=  discussion.discussionUuid && discussion.unseencount > 0 && 
+                  discussion.showUnseenCound -->
+            </div>
+         </div>
+      </li>
+      <!-- end ngRepeat: discussion in $ctrl.discussions -->
    </ul>
 </div></discussion-list> 
                </div>
