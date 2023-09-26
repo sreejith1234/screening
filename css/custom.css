@@ -132,8 +132,9 @@ ul.followup-lists {
 }
 
 #chat-popup .main-chat-list {
-    height: calc(100vh - 28rem);
+    height: calc(100vh - 20rem);
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .chat-popup-header {
@@ -148,7 +149,7 @@ ul.followup-lists {
 .chat-popup-channel {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: calc(100vh - 28rem);
+    height: calc(100vh - 26rem);
 }
 
 .chat-default-block {
@@ -1180,7 +1181,7 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
     top: 0px;
     height: 100%;
     position: absolute;
-    width: 700px;
+    width: 50%;
     z-index: 100;
     background: #fff;
     right: 0px;
@@ -1447,7 +1448,7 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
     top: 0px;
     height: 100%;
     position: absolute;
-    width: 700px;
+    width: 50%;
     z-index: 100;
     background: #fff;
     right: 0px;
@@ -3414,9 +3415,11 @@ ol .signature-list {
 .chat-full-screen {
     height: calc(100vh - 9rem);
 }
-
 .chat-inside-clinical {
     height: calc(100vh - 19rem);
+}
+.chat-inside-clinical .chat-block {
+    height: calc(100vh - 360px - 65px) !important;
 }
 #clinical-chat .iq-card-body {
     padding: 0px 10px;
@@ -3434,7 +3437,7 @@ ol .signature-list {
 
 .chat-block {
     position: relative;
-    height: calc(100% - 70px - 60px);
+    height: calc(100vh - 215px - 60px);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
@@ -4936,7 +4939,7 @@ sonogram-request-component .table th:nth-child(3){
 
 .add-participants-video-call{
     position: absolute;
-    z-index: 2000;
+    z-index: 1000;
     width: auto;
     left: 45%;
     top: 2%;
@@ -5009,7 +5012,7 @@ sonogram-request-component .table th:nth-child(3){
   }
   
   .video-call-block:not(:only-child) {
-    height: 50%;
+    height: 45%;
   }
   .video-call-block:only-child {
     height: 100%;
@@ -5209,7 +5212,7 @@ sonogram-request-component .table th:nth-child(3){
 }
 
 .video-call-block:not(:only-child) {
-  height: 50%;
+  height: 45%;
   flex: 0 0 calc(33.33% - 10px);
 }
 .video-call-block:only-child {
@@ -5862,6 +5865,9 @@ sonogram-request-component .table th:nth-child(3){
 #patinet_log_page .navbar-list li {
     color: #102a51;
 }
+#patinet_log_page .wrapper-menu{
+    color: #102a51;
+}
 #patient_logo_chat_view .bg-primary{
     background-color: #102a51!important;
 }
@@ -5892,6 +5898,9 @@ sonogram-request-component .table th:nth-child(3){
 #patient_logo_chat_view .add-participant-btn{
     background: #102a51 !important;
 }
+#patient_logo_chat_view .iq-chat-list-active {
+    border: solid 1px #102a51 !important;
+}
 /* patient login */
 .toastui-calendar-time{
     height: 100vh !important;
@@ -5907,4 +5916,66 @@ sonogram-request-component .table th:nth-child(3){
 #rehab_card .text-right,
 #diabeties_card .text-right{
     width: calc(100% - 80px);
+    display: flex;
+    justify-content: center;
 }
+
+.respchat-togglebtn button {
+    border: none;
+    border-radius: 50px;
+    padding: 2px 15px;
+    color: #fff;
+    align-items: center;
+    display: flex;
+}
+
+/*admin-page*/
+.roles-list-scroll{
+      max-height: 350px;
+      min-height: 193px;
+      height: auto;
+      overflow-y: auto;
+      border: solid 1px #eee;
+   }
+   .mr-ml-0{
+      margin-right: 0px;margin-left: 0px;
+   }
+   .roles-list-scroll .list-group-item{
+      border: none !important;
+   }
+   .roles-tab{
+      display: flex;
+      justify-content: center;
+      padding: 10px 0px;
+   }
+   .roles-main{
+     padding: 0px 0 0;
+     border:none;
+   }
+   .roles-tab label {
+     display: inline-block;
+     margin: 0 20px 0 0;
+     padding: 2px 5px;
+     font-weight: 500;
+     text-align: center;
+     color: #000;
+     border: none;
+   }
+   
+   .roles-tab label:before {
+     font-family: fontawesome;
+     font-weight: normal;
+     margin-right: 10px;
+   }
+   
+   
+   .roles-tab label:hover {
+     color: #555;
+     cursor: pointer;
+   }
+   
+   .roles-tab input:checked + label {
+     color: #555;
+     border: none;
+   }
+/*admin-page*/

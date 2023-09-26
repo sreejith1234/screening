@@ -83,7 +83,8 @@
 	.iq-top-navbar .iq-navbar-custom .navbar-breadcrumb { display: none; }
 	.iq-sidebar-logo { width: auto; }
 	.iq-menu-bt-sidebar .wrapper-menu{color: #000000;}
-	.iq-top-navbar .iq-navbar-custom .iq-menu-bt { display: inline-block; position: absolute; right: 490px; opacity: 1; color: #82b440;}
+	.logo-text-top{display: none;}
+	.iq-top-navbar .iq-navbar-custom .iq-menu-bt { display: inline-block; position: relative; left: 15px; opacity: 1;}
 	body.sidebar-main .iq-top-navbar .iq-sidebar-logo a span { opacity: 1; display: inline-block; }
 	body.sidebar-main .iq-sidebar {width: 260px; left: 0; z-index: 999; background: rgb(255 255 255); background: -moz-linear-gradient(left, rgba(8,155,171,1) 0%, rgba(13,181,200,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(8,155,171,1)), color-stop(100%, rgba(13,181,200,1))); background: -webkit-linear-gradient(left, rgb(255 255 255) 0%, rgb(255 255 255) 100%); background: -o-linear-gradient(left, rgba(8,155,171,1) 0%, rgba(13,181,200,1) 100%); background: -ms-linear-gradient(left, rgba(8,155,171,1) 0%, rgba(13,181,200,1) 100%); background: linear-gradient(to right, rgb(255 255 255) 0%, rgb(255 255 255) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82b440', endColorstr='#0db5c8', GradientType=1 ); } body.sidebar-main .iq-sidebar .iq-sidebar-menu .iq-menu li a span { display: inline-block; opacity: 1; }
 	body.sidebar-main .iq-sidebar-menu .iq-menu li a .iq-arrow-right { display: inline-block; }
@@ -98,6 +99,10 @@
 	.iq-search-bar .searchbox {width: 100%;}
 	.iq-right-fixed {margin: 0 15px;}
 	body.sidebar-main-active .iq-sidebar-logo {display: none;}
+	.wrapper-menu {
+    	font-size: 25px;
+    	line-height: 25px;
+	}
 }
 @media(max-width:1199px) {
 	.an-img-two{display: none;}
@@ -128,12 +133,11 @@
 	.display-6 { font-size: 1.5rem; font-weight: 300; }
 	.iq-top-navbar .navbar { position: relative; }
 	.iq-top-navbar .navbar-toggler { right: 85px; top: 18px; position: absolute; color: #82b440; border: none; padding: 7px 10px; border-radius: 10px; font-size: 24px; }
-	.navbar-collapse { position: absolute; top: 75px; left: 0; width: 100%; background: #fff; -webkit-box-shadow: 0px 5px 12px 0px rgba(55, 73, 72, 0.15); -moz-box-shadow: 0px 5px 12px 0px rgba(55, 73, 72, 0.15); box-shadow: 0px 5px 12px 0px rgba(55, 73, 72, 0.15); border-radius: 25px; }
-	.navbar-nav.navbar-list { float: right; display: inline-block; }
-	.iq-top-navbar .iq-navbar-custom .iq-menu-bt { right: 130px; top: 16px; }
+	.iq-top-navbar .navbar-collapse { display: block !important;flex-basis: auto !important;}
+	.navbar-nav.navbar-list { float: right; display: inline-block;}
 	.animation-card .an-img .bodymovin { margin-bottom: 0; margin-left: 0; width: 100%; }
 	.iq-footer, .iq-footer .col-lg-6.text-right { text-align: center !important; }
-	.iq-booking-index { overflow-x: scroll; }
+	.iq-booking-index { overflow-x: scroll;}
 	.seat-booking { width: 980px; position: relative; }
 	.seat-booking .col-sm-1 { -ms-flex: 0 0 8.333333%; flex: 0 0 8.333333%; max-width: 8.333333%; width: 8.333333%; }
 	.seat-booking .col-sm-10 { -ms-flex: 0 0 83.333333%; flex: 0 0 83.333333%; max-width: 83.333333%; width: 83.333333%; }
@@ -276,6 +280,12 @@
 .dicom-popup {
     max-width: 96% !important;
 }
+.review-note-wrapper {
+    max-width: 60%;
+}
+.profile-upload-popup {
+    max-width: 100% !important;
+}
 .img-container{
 	width: 150px !important;
 }
@@ -413,9 +423,6 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
   .logo-text-top{
   	width:200px;
   }
-  .iq-menu-bt {
-    top: 18px !important;
-  }
   .admin-step{
 		width: 50%;
 	}
@@ -439,10 +446,7 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
 	.nav-item button{
 		font-size: 10px;
 		font-size: 10px;
-    padding: 3px 6px;
-	}
-	.chat-user-list-hide, .chat-topic-h5{
-		display:none;
+    	padding: 3px 6px;
 	}
 	.iq-card-header-toolbar ul{
 		position: absolute;
@@ -571,12 +575,23 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
 	.chat-sub-dropdown {
     	width: 380px;
 	}
-	
 }
 
 @media(max-width:768px) {
 	.sinature-container canvas{
 		height: 100% !important;
+	}
+	.dicom-popup {
+    	max-width: 98% !important;
+	}
+	.chat-head-sidebar {
+    	height: calc(100vh - 13rem);
+	}
+	.chat-sidebar-right .modal-customized{
+		position: absolute !important;
+	}
+	.chat-sidebar-right .chat-add-members-popup {
+    	max-width: 100% !important;
 	}
 	.sinature-container{
 		width: 500px;
@@ -595,13 +610,62 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
 		display: none;
 	}
 	.legend-graph {
-    	width: calc(36% - 30px);
-    	height: 110px;
+    	width: calc(50% - 10px) !important;
+    	height: 165px;
 	}
 	.chat-sub-dropdown{
 		right: -255%;
 	}
-	
+	.side-card, .blood-test-side-card{
+		width: 100% !important;
+	}
+	#ecg .col-sm-3, #miscellaneous_images .col-sm-3 {
+		flex: 0 0 100% !important;
+    	max-width: 100% !important;
+	}
+	.legend-graph-all {
+    	width: calc(50% - 30px) !important;
+    }
+    .plot-graph{
+    	height: 50vh !important;
+    }
+    .bloodtest-analytics-popup .iq-card-body {
+    	padding: 0px !important;
+	}
+	.proforma-image-container, .sum-label-date{
+		width: 100% !important;
+	}
+	proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
+    	width: 100% !important;
+	}
+	.sum-label-lg {
+    	width: 53% !important;
+	}
+	.sum-label-lg-sub-head {
+    	width: 40% !important;
+	}
+	.proforma-params-container .row .col-lg-4{
+		height:auto !important;
+	}
+	#sonogram-popup {
+		z-index: 1100 !important;
+	}
+	#sonogram-popup .modal-title{
+		margin-right: 10px;
+	}
+	.proforma-params-container {
+    	height: calc(100vh - 10rem);
+    	max-height: calc(100vh - 10rem);
+	}
+	.video-call-block:not(:only-child) {
+    	height: 25%;
+    	flex: 0 0 calc(50% - 10px);
+	}
+	#chat-popup .main-chat-list {
+	    height: calc(100vh - 35rem);
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
 }
 
 
@@ -642,13 +706,17 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
 	}
 	.legend-graph {
 	    width: calc(36% - 30px);
-	    height: 110px;
-		}
+	    height: 165px;
+	}
+}
+@media(max-width:1298px) {
+	main{
+		min-height: calc(100vh - 130px);
+	    height: auto;
+	}
 }
 @media (min-width:992px) and (max-width:1298px) {
-	.iq-menu-bt{
-		margin-right:-6%;
-	}
+	
 	.caption{
 		width: 150px;
     	white-space: nowrap;
@@ -719,28 +787,38 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
 .respchat-togglebtn{
    display: flex;
    justify-content: space-between;
-   padding: 10px 0px;
+   padding: 15px 15px;
    border-bottom: solid 1px #ddd;
 }
 .respchat-togglebtn1 i, 
 .respchat-togglebtn2 i, 
 .respchat-togglebtn3 i {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 5px 0 0;
     text-align: center;
-    line-height: 12px;
+    line-height: 16px;
     border-radius: 10px;
     cursor: pointer;
-    padding: 15px;
+    padding: 5px;
+    color: #ffffff !important;
 }
 .chat-head-des{
    display: none;
 }
 
 @media (max-width: 990px) {
-   .chat-data-left {
+    .chat-data-left {
       display: block;
-   }
+    }
+    .chat-upload-container {
+    	bottom: 150.2px;
+	}
+	.add_edit_clinical_info-popup {
+    	max-width: 90% !important;
+	}
+	#patient-dashboard-tab {
+    	min-height: auto !important;
+	}
    .respchat-header{
       display: block;
    }
@@ -753,9 +831,24 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
       width: calc(100% - 30px);
       background: #fff;
       transition: all 0.45s ease 0s;
-      overflow-y: auto;
+      overflow-y: hidden;
       height: calc(100% - 140px);
    }
+   .chat-inside-clinical .chat-sidebar-right, 
+    .chat-inside-clinical .chat-data-left, 
+    .chat-inside-clinical .chat-data-conversation, 
+    .chat-inside-clinical .create-new-conversation {
+	    width: calc(100% - 50px);
+	}
+	.chat-inside-clinical .chat-block {
+    	height: calc(100vh - 385px - 65px) !important;
+	}
+	.chat-inside-clinical .chat-popup-channel {
+    	height: calc(100vh - 35rem)!important;
+	}
+	.presenting-complaint-section .col-md-1{
+		width:25% !important;
+	}
    .new-conversation {
        padding: 0rem;
        margin-top: 0px;
@@ -770,14 +863,14 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
       padding-left: 0px;
    }
    #newchat {
-      padding-top: 2px;
+      padding-top: 15px;
    }
 }
 /* chat responsive toggle button */
 
-.respchat-togglebtn1 i, 
-.respchat-togglebtn2 i, 
-.respchat-togglebtn3 i {
-    background: var(--theme-light) !important;
-    color: var(--theme-dark) !important;
+@media (min-width:478px) and (max-width:688px) {
+	.clinical-data-hdr .d-flex{
+		width:58%;
+	}
 }
+
