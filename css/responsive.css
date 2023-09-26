@@ -832,7 +832,7 @@ proforma-text, proforma-select, proforma-yes-no, proforma-yes-no-with-comment {
       background: #fff;
       transition: all 0.45s ease 0s;
       overflow-y: hidden;
-      height: calc(100% - 140px);
+      height: calc(100% - 50px);
    }
    .chat-inside-clinical .chat-sidebar-right, 
     .chat-inside-clinical .chat-data-left, 
